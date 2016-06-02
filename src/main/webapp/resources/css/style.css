@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+#menuadmin {
+	float: left;
+	padding: 5px;
+	width: 180px;
+	color: aqua;
+}
+
+.body {
+	background-color: #eeeeee;
+	font-size: 12px;
+}

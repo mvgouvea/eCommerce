@@ -6,16 +6,9 @@
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Loja Virtual Cadastro, login</title>
+	<title>Loja Virtual - Adminstrador</title>
 	<link rel="stylesheet" href="../css/style.css" />
 
-	<style type="text/css">
-body {
-	background-color: #eeeeee;
-	font-size:12px;
-	
-}
-</style>
 
 </h:head>
 <h:body>
@@ -23,27 +16,20 @@ body {
 	<div id="menuadmin">
 
 		<p:breadCrumb>
-			<p:menuitem value="Home" url="index.xhtml" />
+			<p:menuitem value="Home" url="#" />
 			<p:menuitem value="Central de atendimento" url="#" />
 			<p:menuitem value="Meus pedidos" url="#" />
 			<p:menuitem value="FAQ" url="#" />
 		</p:breadCrumb>
 
 	</div>
+	
+	<h2>Tera menu lateral</h2>
 	<!-- Fim do menu superior -->
+	<p:layout style="text-align: left; max-width:500px;min-height:360px;margin:auto;
+	 margin-top:100px;">
 
-<div class="">
-	<h1>Identificação</h1>
-	<h4>
-		<br>Conecte-se ou <a href="http://localhost:8088/eCommerce/usuario.xhtml" target="_self">crie uma nova conta</a> </br> Por favor, complete os seus
-		dados
-	</h4>
-</div>
-
-	<p:layout style="margin:auto; margin-left: 450px;
-	 width:450px; height: 350px;">
-
-		<p:layoutUnit position="center" style="border:2px">
+		<p:layoutUnit position="center">
 			<ui:insert name="centro">
                         O que estiver aqui será substituido!
                     </ui:insert>

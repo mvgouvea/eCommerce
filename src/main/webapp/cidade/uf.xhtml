@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head></h:head>
+<h:body>
+	<h:form>
+		<h:selectOneMenu valueChangeListener="#{testeBean.carregarCidades}">
+			<f:selectItem itemLabel="Mato Grosso" itemValue="1" />
+			<f:selectItem itemLabel="Paraná" itemValue="2" />
+			<f:ajax event="change" render="cidades" />
+		</h:selectOneMenu>
+
+		<h:selectOneMenu id="cidades">
+			<f:selectItems value="#{testeBean.}" />
+		</h:selectOneMenu>
+	</h:form>
+</h:body>
+</html>

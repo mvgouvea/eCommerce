@@ -7,12 +7,19 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core">
 
+<h:head>
+	<title></title>
+</h:head>
+
 <h:body>
-	<h:form>
+	<p:panel id="rpnl" header="Produto Romero é uma biba">
+		<h:outputText value="Descrição: Lorem" />
+		<h:outputText value="Valor: 0,90" />
+	</p:panel>
+	<p:draggable for="rpnl" revert="true" />
 
+	<p:graphicImage id="pic" name="demo/images/nature/nature10.jpg" />
+<p:draggable for="pic" />
 
-
-	</h:form>
 </h:body>
-
 </html>

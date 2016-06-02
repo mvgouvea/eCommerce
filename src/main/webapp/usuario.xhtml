@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Cadastro de Usuário</title>
+</h:head>
+
+<h:body>
+	<ui:decorate template="/template/layout-usuario.xhtml">
+		<ui:define name="centro">
+
+
+			<h:form id="formCadastroCliente">
+				<p:panel header="Login">
+					<h:panelGrid columns="3" cellpadding="5">
+					
+						<h:outputLabel for="nome" value="Nome:" />
+						<p:inputText id="nome"  value="#{beanCliente.nome}" required="true">
+							<p:clientValidator />
+						</p:inputText>
+						<p:message for="nome" display="icon" />
+						
+						<h:outputLabel for="email" value="E-mail:" />
+						<p:inputText id="email" value="#{beanCliente.email}" required="true">
+							<p:clientValidator />
+						</p:inputText>
+						<p:message for="email" display="icon" />
+						
+
+						<h:outputLabel for="senha" value="Senha:" />
+						<p:inputText id="senha" value="#{beanCliente.senha}" required="true">
+							<p:clientValidator  />
+						</p:inputText>
+						
+						<p:message for="senha" display="icon" />
+						
+						<br></br>
+						
+						<p:commandButton value="Entrar" ajax="false" icon="ui-icon-check"
+						validateClient="true" />
+						
+					</h:panelGrid>
+				</p:panel>
+			</h:form>
+		</ui:define>
+	</ui:decorate>
+</h:body>
+</html>
